@@ -95,8 +95,6 @@ h2
 BLUP_geno <- ranef(m, whichel = "geno")
 BLUP_geno <- BLUP_geno$geno
 
-
-
 BLUP <- data.frame(geno = rownames(BLUP_geno),
                             BLUP = BLUP_geno[, 1])
 
@@ -126,3 +124,7 @@ d_adj_means <- merge(BLUP, BLUE, by = "geno")
 plot(x = d_adj_means$BLUP, y = d_adj_means$BLUE)
 cor(x = d_adj_means$BLUP, y = d_adj_means$BLUE)
 
+# save adjusted means
+adj_means <- d_adj_means
+
+save(adj_means, file = "output/pheno/adj_means_FLOWER.RData")

@@ -26,7 +26,7 @@ geno <- geno |>
 geno[1:5,1:5]
 
 #save data
-save(geno, file="data/geno_012.RData")
+save(geno, file="output/geno/geno_012.RData")
 #Stop here
 
 
