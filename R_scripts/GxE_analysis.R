@@ -133,6 +133,13 @@ for (i in seq_along(env_ids)) {
 res_h2 <- data.frame(env = env_ids, h2 = h2_vector)
 res_h2
 
+# save results
+save(BLUE_df, file = file.path("output/pheno/",
+                               paste0("within_env_BLUE_", trait_sel, ".RData")))
+
+# save results
+save(BLUP_df, file = file.path("output/pheno/",
+                               paste0("within_env_BLUP_", trait_sel, ".RData")))
 
 
 AIC_vec <- rep(NA, 4)
