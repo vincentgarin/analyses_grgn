@@ -12,8 +12,15 @@ knitr::opts_chunk$set(echo = TRUE)
 # Introduction
 
 -   Context physio and agro
--   MAS review and limit
+  - Relation physio FLOWER - MOIS - PANW - YIELD
 
+-   MAS review and limit
+- Research question
+  - Comparaison QTL ou MAS vs GP
+  - GP multi-env : reflechir à interpretation des scénarios CV
+  - GP multi-traits = FLOWER - MOIS - PANW - YIELD
+  - GP + Env covariable photoperiod
+  
 # Materials and Methods
 
 ## Materials plant
@@ -21,6 +28,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Genetic data
 
 ## Statistic analysis
+
+- Global pheno analysis : H2 - BLUE global for each trait 
+Y = E + DES + G + GxE + e
+- Within pheno env analysis: H2 - BLUE for each trait
+Y = DES + G  + e
+- Correlation : global and within env (suppl mat)
 
 # Results
 
