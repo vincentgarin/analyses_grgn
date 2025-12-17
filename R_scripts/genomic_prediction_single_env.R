@@ -40,8 +40,8 @@ K <- A.mat(X = geno - 1)
 d <- data.frame(GID = rownames(pheno), y = pheno[, 3])
 pheno <- pheno[, 3, drop = FALSE]
 
-k <- 5
-n_rep <- 2
+k <- 3#5
+n_rep <- 1#2
 
 # space to store the results
 methods_vec <- c("GLUP", "Ridge", "LASSO", "Enet",

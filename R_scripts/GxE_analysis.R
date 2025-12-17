@@ -18,14 +18,14 @@ library(statgenSTA)
 load(file = "data/pheno.RData")
 
 # selected trait ----
-trait_sel <- "YIELD"
+trait_sel <- "PANW"
 # within environment BLUE computation (SpATS models) ----
 
 env_id <- unique(pheno$env)
 
 d_env_i <- pheno[pheno$env == env_id[1], ]
 
-m <- SpATS(response = "YIELD", genotype = "geno",
+m <- SpATS(response = "PANW", genotype = "geno",
            genotype.as.random = TRUE,
            spatial = ~SAP(col, row, nseg = c(20,20)),
            fixed = NULL, random = '~ rep + rep:block + row_f + col_f',

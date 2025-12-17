@@ -35,13 +35,14 @@ pheno <- pheno %>% select(Env, LOCATION_NAME, SITE_LAT, SITE_LONG, EXPT_DESIGN,
                           PLOT_NO, REP_NO, BLOCK_NO, ROW, COL, FIELDMAP.RANGE,
                           FIELDMAP.COLUMN, DESIGNATION,
                           FLfL_C_day, Flo_C_day, PcleLng_M_cm,
-                          PcleWid_M_cm, PcleDMYld_C_gPlot, GHvYld_C_kgha)
+                          PcleWid_M_cm, PcleDMYld_C_gPlot, GHvYld_C_kgha,
+                          PGMR, TGRM, PHT)
 
 # rename columns (for interpretability)
 colnames(pheno) <- c("env", "location", "lat", "lon", "design",
                      "plot_no", "rep", "block", "row", "col", "field_range",
                      "field_column", "geno", "FLAG", "FLOWER", "PANL", "PANW",
-                     "PANDMY", "YIELD")
+                     "PANDMY", "YIELD", "PGMR", "TGMR", "PHT")
 
 
 # convertir les variables
